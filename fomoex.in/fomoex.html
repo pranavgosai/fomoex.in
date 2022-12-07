@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fomoex.in</title>
+    <style>
+        body{
+    margin: 0;
+    background-color: rgba(7, 7, 7, 0.966);
+    color: rgb(255, 255, 255);
+   }
+   
+   .navbar{
+       width: 100%;
+       background-color:rgb(28, 72, 133);
+       position: fixed;
+       top: 0;
+   }
+   ul{
+       list-style-type: none;
+       display: flex;
+       gap: 30px;
+       justify-content: end;
+       padding-right: 40px;
+   }
+   a {
+       text-decoration: none;
+       color: rgba(248, 240, 240, 0.87);
+       font-size: 20px;
+   }
+   .imgs{
+    margin-top: 60px;
+    
+    
+   }
+   .imgs:hover{
+    
+   }
+   .fomo{
+    font-size: 23px;
+    color: white;
+   }
+   h1{
+    margin-left: 40%;
+   }
+  .img{
+    display: flex;
+    text-align: center;
+    
+    
+  }
+  p{
+    margin-top: 120px;
+    font-size: 25px;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    
+  }
+  .counters
+        {
+          margin-top:30px;
+     }
+     .main_counter
+     {
+             display: grid;
+             grid-template-columns: auto auto auto auto ;
+        }
+     .item
+     {
+          padding:50px;
+          padding-top: 100px;
+          padding-left: 50px;
+          font-size: 2rem;
+          color:white;
+          background-color:rgba(28, 72, 133, 0.342);
+          text-align: center;
+          
+     }
+.imgs:hover{
+    
+    box-shadow: royalblue 2px 2px 59px;
+}
+.img:hover{
+    background-color: rgba(0, 0, 255, 0.219);
+    border-radius: 50px;
+    box-shadow:rgba(0, 0, 255, 0.219) 4px 4px 50px ;
+}
+ 
+
+ 
+    </style>
+</head>
+<body>
+    <div class="navbar">
+       
+    <ul>
+        <li class="fomo" style="margin-right: 370px;" >fomoex</li>
+        <li><a href="">home</a></li>
+        <li><a href="">about</a></li>
+        <li><a href="">contact</a></li>
+
+    </ul>
+</div>
+<div class="imgs">
+    <img src="istockphoto-1296691609-612x612.jpg" style="width: 100%; height: 500px;" alt="">
+</div>
+    <div class="about">
+
+        <h1>what is fomoex?<hr color="white" ></h1>
+    </div>
+    <div class="img" style="padding:20px ;  ">
+            <img src="207805.gif" style="height:400px ; border-radius: 30px; box-shadow: rgb(253, 253, 253) 1px 1px 5px;" alt="">
+            <p>  fomoex is an educated global community using a proprietary and innovative decentralised platform to access a highly vetted pipeline of blockchain startups, The e-Oracle Use Case. The e-Oracle User is sharing in a unique wealth building model that exponentially distributes knowledge and wealth. Our 5+ Million plus e-Oracle Users is the Unicorn and our model our USP.</p>
+        </div>
+
+        <div class="img" style="padding:20px;" >
+            <img src="3624cc128171271.6167a1a6ac0a6.gif" style="height:400px ; border-radius: 30px; box-shadow:  rgb(253, 253, 253) 1px 1px 5px; " alt="">
+            <p>Blockchain system verifies and supports extreme levels of simple transactions and this enables players to engage in battles and win money. Take part in the competition and be rewarded for your winnings in the safest way possible.</p>
+        </div>
+        <div class="img" style="padding:20px ;">
+            <img src="202e766135b643e5fb7364a8a2faa365.gif" style="height:400px ;border-radius: 30px; box-shadow:  rgb(253, 253, 253) 1px 1px 5px; width: 535px; " alt="">
+            <p>Welcome! At e-Oracle you can join an exciting and lucrative family of entrepreneurs building their financial future on a sustainable ecosystem of first tier Blockchain use cases. Simply select from our Platform Dashboard one of many economical memberships to get started today and join our first class family of global networkers, where you can learn, earn grow your business.</p>
+        </div>
+
+
+<div class="counters">
+    <div align="center">
+      <h1 style="font-size:2rem; margin-right: 490px; ">Coin Supply</h1>
+    </div>
+    <div class="main_counter">
+      <div class="item counter-value"> 1545 </div>
+      <div class="item counter-value"> 2000 </div>
+      <div class="item counter-value"> 3800 </div>
+      <div class="item counter-value"> 6700 </div>
+    </div>
+  </div>
+
+
+<footer style="background-color: rgba(12, 12, 80, 0.637); font-size: 15px; padding: 50px; ">
+    © All Rights Reserved by fomoex company2023
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.counter-value').each(function(){
+        $(this).prop('Counter',0).animate({
+          Counter: $(this).text()
+        },{
+          duration: 3500,
+          easing: 'swing',
+          step: function (now){
+            $(this).text(Math.ceil(now));
+          }
+        });
+      });
+    });
+    </script>
+
+</div>
+</body>
+</html>
